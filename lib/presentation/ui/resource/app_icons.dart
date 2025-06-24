@@ -17,4 +17,10 @@ abstract class AppIcons{
   static const String wishlist='$_basePath/wishlist.svg';
   static const String bag1='$_basePath/bag.svg';
   static const String account='$_basePath/account.svg';
+  static const String like='$_basePath/wishlistb.svg';
+  static const String back='$_basePath/back.svg';
+  static const String car='$_basePath/car.svg';
+  static const String money='$_basePath/money.svg';
+  static const String replace='$_basePath/replace.svg';
+  static const String policy='$_basePath/policy.svg';
 }

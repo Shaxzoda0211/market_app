@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:market_app/presentation/ui/resource/app_images.dart';
-import 'package:market_app/presentation/ui/screens/onboarding/widgets/onboarding_w.dart';
+import 'package:market_app/presentation/widgets/onboarding_w.dart';
 import 'package:market_app/presentation/ui/screens/splish/widget/dot_w.dart';
 import '../../resource/app_colors.dart';
 import '';

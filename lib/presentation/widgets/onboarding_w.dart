@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import '../../../resource/app_colors.dart';
+import '../ui/resource/app_colors.dart';
 class WOnboarding extends StatelessWidget {
   final String title;
   final String description;
