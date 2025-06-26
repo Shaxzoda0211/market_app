@@ -12,4 +12,5 @@ abstract class AppColors {
   static const Color blueo=Color(0xFF69ABCE);
   static const Color greey=Color(0xFFC0C0C0);
   static const Color brown=Color(0xFF3B250F);
+  static const Color yellow=Color(0xFFFFA305);
 }

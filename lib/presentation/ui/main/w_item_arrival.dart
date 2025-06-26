@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:market_app/presentation/widgets/w_rating.dart';
 
 import '../resource/app_colors.dart';
+import '../resource/app_icons.dart';
 
 class WItemArrival extends StatelessWidget {
   final String image;
@@ -25,16 +27,16 @@ class WItemArrival extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            margin: EdgeInsets.only(bottom: 0.1),
-            padding: EdgeInsets.all(12),
-            color: AppColors.itemColor,
-            child: Image.network(
-              fit: BoxFit.cover,
-              height: 120,
-              width: double.infinity,
-              image,
+              margin: EdgeInsets.only(bottom: 0.1),
+              padding: EdgeInsets.all(12),
+              color: AppColors.itemColor,
+              child: Image.network(
+                fit: BoxFit.cover,
+                height: 120,
+                width: double.infinity,
+                image,
+              ),
             ),
-          ),
           WRating(),
           Padding(
             padding: EdgeInsets.only(top: 8.0, bottom: 6.0),
