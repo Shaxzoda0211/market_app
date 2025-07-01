@@ -4,6 +4,7 @@ import 'package:market_app/presentation/ui/main/w_item_color.dart';
 import 'package:market_app/presentation/ui/main/w_item_text.dart';
 import 'package:market_app/presentation/ui/resource/app_colors.dart';
 import 'package:market_app/presentation/ui/resource/app_icons.dart';
+import 'package:market_app/presentation/widgets/w_btn.dart';
 import 'package:market_app/presentation/widgets/w_rating.dart';
 
 import '../screens/splish/widget/dot_w.dart';
