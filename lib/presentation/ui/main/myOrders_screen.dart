@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:market_app/presentation/ui/main/DeliveryInformation_screen.dart';
 import 'package:market_app/presentation/ui/main/w_count_btn.dart';
 import 'package:market_app/presentation/ui/main/w_product_price_total.dart';
-import 'package:market_app/presentation/widgets/w_btn.dart';
+import 'package:market_app/presentation/ui/main/w_shoppingCart.dart';
 
+import '../../widgets/w_btn.dart';
 import '../../widgets/w_rating.dart';
 import '../resource/app_colors.dart';
 import '../resource/app_icons.dart';
-
-class CartScreen extends StatefulWidget {
-  const CartScreen({super.key});
+import 'DeliveryInformation_screen.dart';
+class MyordersScreen extends StatefulWidget {
+  const MyordersScreen({super.key});
 
   @override
-  State<CartScreen> createState() => _CartScreenState();
+  State<MyordersScreen> createState() => _MyordersScreenState();
 }
 
-class _CartScreenState extends State<CartScreen> {
+class _MyordersScreenState extends State<MyordersScreen> {
   List<String> images = [
     "https://static.vecteezy.com/system/resources/previews/046/829/689/non_2x/smart-watch-isolated-on-transparent-background-png.png",
     "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111901_mbp16-gray.png",
@@ -25,20 +25,21 @@ class _CartScreenState extends State<CartScreen> {
     "https://cleanshop77.ru/upload/iblock/d8f/vglxdraopwdxxd9iv7p1qrnoxtm07kkg.png",
     "https://foni.papik.pro/uploads/posts/2024-09/foni-papik-pro-l3wx-p-kartinki-chernaya-futbolka-na-prozrachnom-1.png",
   ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         forceMaterialTransparency: true,
-        automaticallyImplyLeading: false,
-        title: const Text(
-          textAlign: TextAlign.center,
-          "Shopping Cart",
-          style: TextStyle(
-            fontSize: 22,
-            fontWeight: FontWeight.bold,
-            color: AppColors.black,
+        title: Padding(
+          padding: const EdgeInsets.only(left: 90),
+          child: const Text(
+            textAlign: TextAlign.center,
+            "My Order",
+            style: TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              color: AppColors.black,
+            ),
           ),
         ),
       ),
@@ -89,7 +90,7 @@ class _CartScreenState extends State<CartScreen> {
                               SizedBox(height: 16),
                               Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                MainAxisAlignment.spaceBetween,
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.only(
@@ -218,7 +219,18 @@ class _CartScreenState extends State<CartScreen> {
                           ),
                         ),
                         SizedBox(height: 20),
-                        WCountBtn(),
+                        Container(
+                          width: 120,
+                          height: 32,
+                          decoration: BoxDecoration(
+                            color: AppColors.primary,
+                          ), child: Text(textAlign: TextAlign.center,"Track Order",
+                            style: TextStyle(
+                              color: AppColors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),),
+                        )
                       ],
                     ),
                   ],
@@ -265,7 +277,7 @@ class _CartScreenState extends State<CartScreen> {
                               SizedBox(height: 16),
                               Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                MainAxisAlignment.spaceBetween,
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.only(
@@ -393,8 +405,19 @@ class _CartScreenState extends State<CartScreen> {
                             ),
                           ),
                         ),
-                        SizedBox(height: 20),
-                        WCountBtn(),
+                        SizedBox(height: 16),
+                        Container(
+                          width: 120,
+                          height: 32,
+                          decoration: BoxDecoration(
+                            color: AppColors.primary,
+                          ), child: Text(textAlign: TextAlign.center,"Track Order",
+                          style: TextStyle(
+                            color: AppColors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),),
+                        )
                       ],
                     ),
                   ],
@@ -441,7 +464,7 @@ class _CartScreenState extends State<CartScreen> {
                               SizedBox(height: 16),
                               Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                MainAxisAlignment.spaceBetween,
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.only(
@@ -570,7 +593,18 @@ class _CartScreenState extends State<CartScreen> {
                           ),
                         ),
                         SizedBox(height: 20),
-                        WCountBtn(),
+                        Container(
+                          width: 120,
+                          height: 32,
+                          decoration: BoxDecoration(
+                            color: AppColors.primary,
+                          ), child: Text(textAlign: TextAlign.center,"Track Order",
+                          style: TextStyle(
+                            color: AppColors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),),
+                        )
                       ],
                     ),
                   ],
@@ -617,7 +651,7 @@ class _CartScreenState extends State<CartScreen> {
                               SizedBox(height: 16),
                               Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                MainAxisAlignment.spaceBetween,
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.only(
@@ -746,7 +780,18 @@ class _CartScreenState extends State<CartScreen> {
                           ),
                         ),
                         SizedBox(height: 20),
-                        WCountBtn(),
+                        Container(
+                          width: 120,
+                          height: 32,
+                          decoration: BoxDecoration(
+                            color: AppColors.primary,
+                          ), child: Text(textAlign: TextAlign.center,"Track Order",
+                          style: TextStyle(
+                            color: AppColors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),),
+                        )
                       ],
                     ),
                   ],
@@ -793,7 +838,7 @@ class _CartScreenState extends State<CartScreen> {
                               SizedBox(height: 16),
                               Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                MainAxisAlignment.spaceBetween,
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.only(
@@ -921,7 +966,18 @@ class _CartScreenState extends State<CartScreen> {
                           ),
                         ),
                         SizedBox(height: 20),
-                        WCountBtn(),
+                        Container(
+                          width: 120,
+                          height: 32,
+                          decoration: BoxDecoration(
+                            color: AppColors.primary,
+                          ), child: Text(textAlign: TextAlign.center,"Track Order",
+                          style: TextStyle(
+                            color: AppColors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),),
+                        )
                       ],
                     ),
                   ],
@@ -957,7 +1013,7 @@ class _CartScreenState extends State<CartScreen> {
                                 ),
                               ),
                               Text(
-                                "Do you want to delete this product?",
+                                "Are you want to delete this product?",
                                 style: TextStyle(
                                   color: AppColors.grey,
                                   fontSize: 18,
@@ -968,7 +1024,7 @@ class _CartScreenState extends State<CartScreen> {
                               SizedBox(height: 16),
                               Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                MainAxisAlignment.spaceBetween,
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.only(
@@ -1096,7 +1152,18 @@ class _CartScreenState extends State<CartScreen> {
                           ),
                         ),
                         SizedBox(height: 20),
-                        WCountBtn(),
+                        Container(
+                          width: 120,
+                          height: 32,
+                          decoration: BoxDecoration(
+                            color: AppColors.primary,
+                          ), child: Text(textAlign: TextAlign.center,"Track Order",
+                          style: TextStyle(
+                            color: AppColors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),),
+                        )
                       ],
                     ),
                   ],
@@ -1111,10 +1178,10 @@ class _CartScreenState extends State<CartScreen> {
                     child: Text(
                       "Apply",
                       style: TextStyle(
-                        color: AppColors.primary,
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: "MainFont"
+                          color: AppColors.primary,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "MainFont"
                       ),
                     ),
                   ),

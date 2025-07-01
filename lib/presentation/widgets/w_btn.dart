@@ -9,6 +9,7 @@ class WBtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  GestureDetector(
+      behavior: HitTestBehavior.opaque,
       onTap: onTap,
       child: Container(
         width: double.infinity,
@@ -17,7 +18,7 @@ class WBtn extends StatelessWidget {
         decoration: BoxDecoration(
             color: AppColors.primary
         ),
-        child: Text(text, style: TextStyle(color: AppColors.white,fontWeight: FontWeight.bold),),
+        child: Text(text, style: TextStyle(color: AppColors.white,fontWeight: FontWeight.bold,fontFamily: "MainFont"),),
       ),
     );
   }
